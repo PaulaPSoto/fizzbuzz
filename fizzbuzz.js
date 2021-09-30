@@ -12,4 +12,13 @@ function fizzbuzz(num) {
 
   return num;
 }
+
+function print(num) {
+  for (let i = 0; i <= num; i++) {
+    console.log(`${i}: ${fizzbuzz(i)}`);
+  }
+}
+
+print(16);
+
 module.exports = fizzbuzz;
