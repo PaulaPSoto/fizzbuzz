@@ -1,4 +1,7 @@
 function fizzbuzz(num) {
+  if (typeof num !== "number") {
+    return "Error: the argument is not of type number";
+  }
   //con esta Arrow Function "traigo" lo que quiero conseguir para luego aplicarlo.
   //esta devorlverá booleano si se cumple condición: true
   const divisible = (divisor, num) => num % divisor === 0;
