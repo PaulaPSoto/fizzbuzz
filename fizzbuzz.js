@@ -1,4 +1,5 @@
 function fizzbuzz(num) {
+  //con esta Arrow Function "traigo" lo que quiero conseguir para luego aplicarlo.
   //esta devorlverá booleano si se cumple condición: true
   const divisible = (divisor, num) => num % divisor === 0;
 
@@ -6,14 +7,14 @@ function fizzbuzz(num) {
     return 0;
   }
 
-  if (num % 3 === 0 && num % 5 === 0) {
+  if (divisible(3, num) && divisible(5, num)) {
     return "fizzbuzz";
   }
-  if (num % 3 === 0) {
+  if (divisible(3, num)) {
     return "fizz";
   }
 
-  if (num % 5 === 0) {
+  if (divisible(5, num)) {
     return "buzz";
   }
 
