@@ -1,4 +1,11 @@
 function fizzbuzz(num) {
+  //esta devorlverá booleano si se cumple condición: true
+  const divisible = (divisor, num) => num % divisor === 0;
+
+  if (num === 0) {
+    return 0;
+  }
+
   if (num % 3 === 0 && num % 5 === 0) {
     return "fizzbuzz";
   }
